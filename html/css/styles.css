@@ -1,0 +1,231 @@
+/*Tipografía*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500&family=Roboto:ital,wght@0,300;1,100&family=Shadows+Into+Light&family=Signika+Negative:wght@300&family=Source+Sans+Pro:wght@200;400&display=swap");
+
+body {
+  font-family: "Cabin Condensed", sans-serif;
+  font-family: "Chathura", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  font-family: "Signika Negative", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgb(238, 255, 0);
+}
+main {
+  background-color: rgb(22, 166, 255)
+}
+@media screen and (min-width: 600px) {
+header div {
+  display: flex;
+  justify-content: center;
+}
+header .Navegador {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  display: inline; 
+  padding: 2px 4px;
+  margin-left: 115px;
+  margin-top: 5px;
+}
+nav {
+  background-color: rgba(24, 201, 255, 0.815);
+}
+ul {
+  list-style-type: none;
+}
+a,
+button {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+button {
+  border-radius: 5px;
+  background-color: white; 
+  padding: 3px;
+}
+main section {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.Bienvenidos {
+  background-color: rgb(251, 255, 10);
+  padding: 2px 1px;
+  margin-left: 25%;
+  margin-right: 25%;
+  grid-area: Bienvenidos;
+}
+.BienvenidosTexto {
+  background-color: rgb(22, 166, 255) ;
+  padding: 2px 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  grid-area: BienvenidosTexto;
+}
+.ProductosIndex {
+  display: flex;
+  align-items: baseline;
+  grid-area: ProductosIndex;
+}
+.Destacados {
+  text-decoration: underline;
+  color: aliceblue;
+  text-align: center;
+}
+.ResumenInicio {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 40px 200px;
+  grid-template-areas: ". Titulo1 Titulo2 Titulo3" " Resumen1 Resumen2 Resumen3";
+}
+.Titulo1 {
+  grid-area: Titulo1;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-image: url('Fondo.jpg');
+}
+h1, p, .Titulo1, .Titulo2, .Titulo3 {
+  text-align: center;
+}
+h1, p,.Resumen1, .Resumen2, .Resumen3 {
+  text-align: center;
+  padding-top: 5%;
+}
+.Titulo2 {
+  grid-area: Titulo2;
+  background-image: url('Imagenes/MAIN.JPG');
+}
+.Titulo3 {
+  grid-area: Titulo3;
+  background-image: url('Fondo.jpg');
+}
+.Resumen1 { 
+  grid-area: Resumen1;
+  background-image: url('Fondo.jpg');
+  height: 150px;
+}
+.Resumen2 {
+  grid-area: Resumen2;
+  background-image: url('Fondo.jpg');
+  height: 150px;
+}
+.Resumen3 {
+  grid-area: Resumen3;
+  background-image: url('Fondo.jpg');
+  height: 150px;
+}
+/*Footer*/
+.Footer {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 200px;
+  grid-template-areas:" Celda1 Celda2 Celda3";
+  padding-left: 100px;
+  column-gap: 50px;
+  grid-area: Footer;
+}
+h1, .box ,.Celda1, .Celda2, .Celda3 {
+  text-align: center;
+}
+.Celda1 { 
+  grid-area: Resumen1;
+  height: 50px;
+  font-size: 20px;
+  position: left;
+}
+.Celda2 {
+  height: 50px;
+  padding-top: 50px;
+}
+.Celda3 {
+  grid-area: Resumen3;
+  background-color: rgb(0, 193, 252);
+  padding: auto auto;
+}
+.Copyright {
+  padding-top: 100px;
+  display: inline;
+}
+/*mainProductos*/
+#ImagenProductos{
+  display: flex;
+  justify-content: center;
+}
+#Articulos{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "Articulo1 Articulo2 Articulo3" "Articulo4 Articulo5 Articulo6" "Articulo7 Articulo8 Articulo9";
+  justify-items: center;
+  text-align: center;
+  padding: 20px;
+  
+}
+.Articulo1, 
+.Articulo2, 
+.Articulo3, 
+.Articulo4, 
+.Articulo5, 
+.Articulo6, 
+.Articulo6, 
+.Articulo7, 
+.Articulo8, 
+.Articulo9 {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+  display: grid;
+  
+  justify-items:center ;
+  align-content: space-around ;
+  height: 200px;
+  width: 200px;
+  padding-bottom: 10px;
+  border: solid 1px black;
+  row-gap: 2fr;
+}
+.Articulo1{ 
+  grid-area: Articulo1;
+}
+.Articulo2{
+  grid-area: Articulo2;
+}
+.Articulo3{
+  grid-area: Articulo3;
+}
+.Articulo4{
+  grid-area: Articulo4;
+}
+.Articulo5{
+  grid-area:Articulo5 ;
+}
+.Articulo6{
+  grid-area: Articulo6;
+}
+.Articulo7{
+  grid-area:Articulo7 ;
+}
+.Articulo8{
+  grid-area:Articulo8 ;
+}
+.Articulo9{
+  grid-area:Articulo9 ;
+}
+.ArticuloJPG {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 320px){
+
+  }
+  a{
+    font-size: 15px;
+  }
+ fieldset {
+   background-color: rgb(0, 183, 255);
+ }
+}
