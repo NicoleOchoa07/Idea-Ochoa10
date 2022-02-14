@@ -56,9 +56,9 @@ main section {
 }
 .Bienvenidos {
   background:linear-gradient( to right, lightblue, yellow, lightblue);
-  padding: 2px 1px;
-  margin-left: 25%;
-  margin-right: 25%;
+  padding: 1% 1%;
+  margin-left: 75%;
+  margin-right: 75%;
   grid-area: Bienvenidos;
 }
 .BienvenidosTexto {
@@ -67,6 +67,7 @@ main section {
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
+  font-size: large;
   grid-area: BienvenidosTexto;
 }
 .ProductosIndex {
@@ -82,14 +83,6 @@ main section {
   padding-left: 10px;
   padding-right: 28px;
   line-height: 5px;
-}
-.ImagenResumen, .ImagenResumen2, .ImagenResumen3 {
-  width: 250px;
-  height: 500px;
-  padding-left: 0;
-  padding-right: 0; 
-  padding-top: 0;
-  padding-bottom: 0 ;
 }
 .ResumenInicio {
   display: grid;
@@ -248,6 +241,8 @@ h1, .box ,.Celda1, .Celda2, .Celda3 {
   }
 }
 }
+
+
 @media screen and (min-width: 320px){
   ul{
     font-size: 15px;
