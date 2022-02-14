@@ -222,9 +222,21 @@ h1, .box ,.Celda1, .Celda2, .Celda3 {
   width: 100px;
   height: 100px;
 }
-@media screen and (min-width: 320px){
-
+.Animation {
+  animation-duration: 2s;;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
+  100%{
+    opacity: 1;
+  }
+}
+}
+@media screen and (min-width: 320px){
   a{
     font-size: 15px;
   }

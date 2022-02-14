@@ -223,9 +223,26 @@ h1, .box ,.Celda1, .Celda2, .Celda3 {
 .ContactoMain{
   display: inline;
 }
+/*Animation en seciones 2-6*/
+.Animation {
+  animation-duration: 2s;;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+}
 @media screen and (min-width: 320px){
- ul 
-  list-style: none;
+ ul {
+   list-style: none;
+ }
+  
  
 }
 
