@@ -78,6 +78,18 @@ main section {
   text-decoration: underline;
   color: aliceblue;
   text-align: center;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 28px;
+  line-height: 5px;
+}
+.ImagenResumen, .ImagenResumen2, .ImagenResumen3 {
+  width: 250px;
+  height: 500px;
+  padding-left: 0;
+  padding-right: 0; 
+  padding-top: 0;
+  padding-bottom: 0 ;
 }
 .ResumenInicio {
   display: grid;
@@ -321,5 +333,5 @@ article h3 p{
   width: 0px;
   padding-bottom:10px;
   border: solid 0.5px black;
-  row-gap: 5fr;
+  row-gap: 5fr;}
 }
