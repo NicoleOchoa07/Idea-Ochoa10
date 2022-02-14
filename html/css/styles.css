@@ -25,8 +25,8 @@ header .Navegador {
 }
 nav ul li {
   display: inline; 
-  padding: 2px 4px;
-  margin-left: 115px;
+  padding: 2px 3px;
+  margin-left: 129px;
   margin-top: 5px;
 }
 nav {
@@ -34,6 +34,10 @@ nav {
 }
 ul {
   list-style-type: none;
+  grid-area: ul;
+}
+li a {
+  font-size: 20px;
 }
 a,
 button {
@@ -49,13 +53,12 @@ button {
 main section {
   display: flex;
   justify-content: space-evenly;
-
 }
 .Bienvenidos {
-  background-color: rgb(251, 255, 10);
-  padding: 2px 1px;
-  margin-left: 25%;
-  margin-right: 25%;
+  background:linear-gradient( to right, lightblue, yellow, lightblue);
+  padding: 1% 1%;
+  margin-left: 75%;
+  margin-right: 75%;
   grid-area: Bienvenidos;
 }
 .BienvenidosTexto {
@@ -64,6 +67,7 @@ main section {
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
+  font-size: large;
   grid-area: BienvenidosTexto;
 }
 .ProductosIndex {
@@ -75,6 +79,10 @@ main section {
   text-decoration: underline;
   color: aliceblue;
   text-align: center;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 28px;
+  line-height: 5px;
 }
 .ResumenInicio {
   display: grid;
@@ -219,13 +227,106 @@ h1, .box ,.Celda1, .Celda2, .Celda3 {
   width: 100px;
   height: 100px;
 }
-@media screen and (min-width: 320px){
-
+.Animation {
+  animation-duration: 2s;;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
-  a{
+  100%{
+    opacity: 1;
+  }
+}
+}
+
+
+@media screen and (min-width: 320px){
+  ul{
     font-size: 15px;
+    list-style: none;
+    line-height: 1.5;
   }
  fieldset {
-   background-color: rgb(0, 183, 255);
+  background-color: rgb(0, 183, 255);
  }
+a,
+button {
+  text-decoration: none;
+}
+
+.Bienvenidos, .BienvenidosTexto, .Copyright, .Productos{
+  text-align: center;
+  margin: 25px;
+}   
+.ImagenResumen, .ImagenResumen2, .ImagenResumen3 {
+  width: 100px;
+  height: 100px;
+  padding-left: 110px;
+  padding-right: 60px; 
+  padding-top: 15px;
+  padding-bottom: 15px ;
+}
+.Destacados {
+font-size: 15px;
+padding-left: 100px;
+padding-right: 28px;
+line-height: 5px;  
+}
+.ProductosIndex{
+  display: inline-block;
+}
+.ResumenInicio{
+  padding-left: 50px;
+  padding-right: 60px; 
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: 12px;
+}
+.Titulo1, .Titulo2, .Titulo3,.Resumen1, .Resumen2, .Resumen3{
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.Titulo2{
+  padding-left: 60px;
+}
+/*Footer*/
+.Celda1 {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.Celda3{
+  width: 75px;
+  padding-left: 50px;
+}
+/*MainProductos*/
+.ArticuloJPG {
+  width: 100px;
+  height: 100px;
+  
+}
+#Articulos{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "Articulo1 Articulo2" "Articulo3 Articulo4" "Articulo5 Articulo6" "Articulo7 Articulo8" "Articulo9";
+  justify-items: center;
+  text-align: center;
+  padding: 5px;
+  
+}
+article h3 p{
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+  display: grid;
+  justify-items:center ;
+  align-content: space-around ;
+  height: 50px;
+  width: 0px;
+  padding-bottom:10px;
+  border: solid 0.5px black;
+  row-gap: 5fr;}
 }
