@@ -53,7 +53,7 @@ main section {
 
 }
 .Bienvenidos {
-  background-color: rgb(251, 255, 10);
+  background:linear-gradient( to right, lightblue, yellow, lightblue);
   padding: 2px 1px;
   margin-left: 25%;
   margin-right: 25%;

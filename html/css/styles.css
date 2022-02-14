@@ -34,6 +34,10 @@ nav {
 }
 ul {
   list-style-type: none;
+  grid-area: ul;
+}
+li a {
+  font-size: 20px;
 }
 a,
 button {
@@ -49,10 +53,9 @@ button {
 main section {
   display: flex;
   justify-content: space-evenly;
-
 }
 .Bienvenidos {
-  background-color: rgb(251, 255, 10);
+  background:linear-gradient( to right, lightblue, yellow, lightblue);
   padding: 2px 1px;
   margin-left: 25%;
   margin-right: 25%;
